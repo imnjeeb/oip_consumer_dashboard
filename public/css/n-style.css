@@ -1,0 +1,28 @@
+
+.dash-unit .knob {
+    position: relative;
+    z-index: 0;
+    width:105px;
+    height:105px;
+    top: 0;
+    margin: 0 30% auto;
+    color: rgba(0, 0, 0, 1);
+}
+
+.dash-unit .knob:before,
+.dash-unit .knob:after {
+    content: " %";
+    position: absolute;
+    top: 35%;
+    bottom: 35%;
+    right: 23px;
+    color: antiquewhite;
+}
+
+.dash-unit .knob > .btn-group {
+    position: absolute;
+    bottom: -2px;
+    left: 30%;
+    right: 30%;
+    padding-bottom: 10px;
+}

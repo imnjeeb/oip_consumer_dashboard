@@ -1,0 +1,52 @@
+{
+  "serverProtocol":"https",
+  "serverUrl": "api.oip.tm.com.my/app/t/tmrnd.com.my/iot/1.0/api/plugins/telemetry/DEVICE/36c07950-16b7-11e8-ace1-e91f8f4d7baf",
+  "api":[
+    {
+      "id": "api_rpi_k_attr_get",
+      "type": "key.attr.GET",
+      "name": "Attribute Keys",
+      "target": "keys/attributes",
+      "params": [],
+      "method": "GET",
+      "expect_param": false,
+      "desc": "Get attribute key list in array"
+    },{
+      "id": "api_rpi_v_attr_get",
+      "type": "value.attr.GET",
+      "name": "Attribute Values",
+      "target": "values/attributes",
+      "params": ["keys"],
+      "method": "GET",
+      "expect_param": true,
+      "desc": "Get attribute values in array"
+    },{
+      "id": "api_rpi_k_ts_get",
+      "type": "key.ts.GET",
+      "name": "Timeseries Keys",
+      "target": "keys/timeseries",
+      "params": [],
+      "method": "GET",
+      "expect_param": false,
+      "desc": "Get timeseries key list in array"
+    },{
+      "id": "api_rpi_v_ts_get",
+      "type": "value.ts.GET",
+      "name": "Timeseries Values",
+      "target": "values/timeseries",
+      "params": ["keys"],
+      "method": "GET",
+      "expect_param": true,
+      "desc": "Get timeseries values in array"
+    },{
+      "id": "api_rpi_h_ts_get",
+      "type": "historic.ts.GET",
+      "name": "History TS Values",
+      "target": "values/timeseries",
+      "params": ["keys","startTs","endTs","interval","limit"],
+      "method": "GET",
+      "expect_param": true,
+      "desc": "Get historical timeseries values in array"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "serverProtocol":"https",
+  "serverUrl": "api.oip.tm.com.my/app/t/tmrnd.com.my/iot/1.0/api/plugins/rpc/oneway/36c07950-16b7-11e8-ace1-e91f8f4d7baf",
+  "api": [
+    {
+      "id": "api_rpi_rpc",
+      "type": "rpc.POST",
+      "name": "Gateway control",
+      "target": "",
+      "params": [],
+      "method": "POST",
+      "expect_param": false,
+      "desc": ""
+    },{
+      "id": "api_mytmj_upload_media_content",
+      "type": "cn.media.POST",
+      "name": "Post Media Content",
+      "target": "admin/content/media",
+      "params": ["user_id","group_id","caption","reply_to","latlng","location_name"],
+      "header": {
+        "content-type":"multipart/form-data; boundary=12345"
+      },
+      "method": "POST",
+      "expect_param": false,
+      "desc": "Upload image to the server. Returns activity object containing the media url."
+    }
+  ]
+}
