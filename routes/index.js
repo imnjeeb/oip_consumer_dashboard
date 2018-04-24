@@ -10,11 +10,11 @@ module.exports = function (app) {
   var fs = require('fs');
   var moment = require("./moment.min");
 
-  var authorized = "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZW1vQG1tdWRjLmNvbSIsInNjb3BlcyI6WyJDVVNUT01FUl9VU0VSIl0sInVzZXJJZCI6IjMzZDhjMmIwLTE2YjctMTFlOC1hY2UxLWU5MWY4ZjRkN2JhZiIsImVuYWJsZWQiOnRydWUsImlzUHVibGljIjpmYWxzZSwidGVuYW50SWQiOiJlY2QxYzgyMC1mYmY1LTExZTctYWUyZS1lOTFmOGY0ZDdiYWYiLCJjdXN0b21lcklkIjoiMzNiMDUzMjAtMTZiNy0xMWU4LWFjZTEtZTkxZjhmNGQ3YmFmIiwiaXNzIjoib2lwLnRtLmNvbS5teSIsImlhdCI6MTUyMzM3NDUxMCwiZXhwIjoxNTMyMzc0NTEwfQ.DI-X8dOr9ViIPA7zR2fQ7YAkfIESRCgUKU_3FpROnZZw-QPjzb61pf7dR_1GbTniagxCeKN1ybATEbldTYGXHw";
+  var authorized = "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZW1vQG1tdS5lZHUubXkiLCJzY29wZXMiOlsiQ1VTVE9NRVJfVVNFUiJdLCJ1c2VySWQiOiJmY2Y5YjcxMC0zYzg5LTExZTgtOWQxNi04ZjRiZjlhMjYzZTUiLCJlbmFibGVkIjp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiZWNkMWM4MjAtZmJmNS0xMWU3LWFlMmUtZTkxZjhmNGQ3YmFmIiwiY3VzdG9tZXJJZCI6IjMzYjA1MzIwLTE2YjctMTFlOC1hY2UxLWU5MWY4ZjRkN2JhZiIsImlzcyI6Im9pcC50bS5jb20ubXkiLCJpYXQiOjE1MjQ1NDI5MDcsImV4cCI6MTUzMzU0MjkwN30.9gMZB74wPB43MfGvSLKM2oXVtVPbNNS97D5U4P8-EDwaM0TQh2JP2JvEIiCwpgrJO6wGhimI2vcbVPyBZSnYKA";
   var _header = {
     "Content-Type":"application/json",
     "Accept":"application/json",
-    "Authorization":"Bearer a7c2b5d6-f9ca-380b-aacf-d590f05aecc3"
+    "Authorization":"Bearer 5c0326be-568d-38b3-9f32-8a010f66a411"
   };
   // configure
   const get_path = 'config/get.json';
